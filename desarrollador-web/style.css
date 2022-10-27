@@ -1,0 +1,854 @@
+:root {
+    --negro-n: rgba(0, 0, 0, 0.993);
+    --azul-claro: black;
+    --gris-oscuro: #0e0e0f;
+    --verde-manzana: #0af606;
+    --blanco-griss: rgb(166, 162, 162);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+}
+
+/* clase del body */
+.body {
+    /* background: var(--gris-oscuro); */
+    background-image: url(imagenes/fondoPantalla.webp);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+
+}
+
+.body::-webkit-scrollbar {
+    width: 7px;
+}
+
+.body::-webkit-scrollbar-thumb {
+    background: var(--verde-manzana);
+    border-radius: 3px;
+}
+
+/* header */
+header .navbar-collapse {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.imgHeader {
+    width: 100px;
+    height: auto;
+}
+
+.navbar-collapse a:hover {
+    text-decoration: underline;
+}
+
+.flechabajo {
+    font-size: 50px;
+    color: green;
+}
+
+/* header foto de portada */
+.color-header {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    color: var(--verde-manzana);
+}
+
+.color-header:hover {
+    filter: saturate(180%);
+}
+
+.tutuloFotoDePortada {
+    color: var(--verde-manzana);
+}
+
+.contenedor10 {
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    height: 40px;
+    font-size: 30px;
+    line-height: 40px;
+    overflow: hidden;
+}
+
+.ul {
+    list-style: none;
+    padding-left: 10px;
+    animation: subir 7s infinite;
+}
+
+.ul,
+p {
+    margin: 0;
+}
+
+@keyframes subir {
+    0% {
+        margin-top: 0;
+    }
+
+    20% {
+        margin-top: 0;
+    }
+
+    25% {
+        margin-top: -40px;
+    }
+
+    50% {
+        margin-top: -40px;
+    }
+
+    55% {
+        margin-top: -80px;
+    }
+
+    80% {
+        margin-top: -80px;
+    }
+
+    85% {
+        margin-top: -40px;
+    }
+
+    95% {
+        margin-top: -40px;
+    }
+
+    100% {
+        margin-top: 0;
+    }
+}
+
+/* sobremi */
+.sobre-mi {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.sobre-mi h2 {
+    color: var(--verde-manzana);
+}
+
+.imgSobreMi {
+    width: 400px;
+    height: 0 auto;
+    margin: 10px;
+}
+
+.sobre-mi p {
+    color: #fff;
+    max-width: 500px;
+}
+
+/* Que puedo aportar a tu proyecto */
+.wave {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.wave h2,
+h3 {
+    color: var(--verde-manzana)
+}
+
+.wavetitulo {
+    padding: 30px;
+}
+
+.siza {
+    padding: 25px;
+    max-width: 300px;
+    color: #fff;
+    margin: 0 auto;
+}
+
+.siza h3 {
+    border-radius: 20px 2px;
+    border: 0.7px solid #fff;
+    padding: 5px;
+}
+
+.siza p {
+    border-radius: 20px 2px;
+    border: 1px solid #fff;
+    padding: 5px;
+}
+
+@media (min-width: 950px) {
+    .a {
+        position: relative;
+        left: 120px;
+    }
+
+    .b {
+        position: relative;
+        right: 120px;
+    }
+
+    .line {
+        background: var(--verde-manzana);
+        width: 2px;
+        height: 100px;
+        border-radius: 3px;
+    }
+}
+
+/* Me adapto a las necesidades del cliente  */
+.foto2 {
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.h4foto2 {
+    color: rgb(10, 246, 6);
+    text-transform: capitalize;
+    text-align: center;
+    border: 1px solid;
+    border-radius: 20px 2px;
+    padding: 10px;
+}
+
+/* Algunas tecnologias que utilizo */
+#algunasTecnologiasQueUtilizo {
+    text-align: center;
+    color: var(--verde-manzana);
+}
+
+.tecnologias {
+    color: rgb(166, 162, 162);
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* min-height: 100vh; */
+}
+
+.tituloTecnologias {
+    color: var(--verde-manzana);
+    text-align: center;
+    padding-top: 20px;
+}
+
+.card0 {
+    position: relative;
+    width: 200px;
+    height: 400px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* padding: 0px; */
+    text-align: center;
+}
+
+.card1 {
+    position: relative;
+    width: 200px;
+    height: 250px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* padding: 10px; */
+    text-align: center;
+}
+
+.iconocard {
+    font-size: 90px;
+    color: rgb(218, 169, 169);
+}
+
+.card0 div {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backface-visibility: hidden;
+    transition: 2s;
+}
+
+.card1 div {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backface-visibility: hidden;
+    transition: 2s;
+}
+
+.card0 .front {
+    background: #1c1c1d;
+    border: 1px solid var(--verde-manzana);
+    border-radius: 30px 2px;
+    transform: perspective(500px) rotateY(0deg);
+}
+
+/* .card0{
+    border: 1px solid red;
+    border-radius: 40px 2px;
+} */
+.card0 h2 {
+    color: var(--verde-manzana);
+}
+
+.card1 .front {
+    background: #1c1c1d;
+    border: 1px solid var(--verde-manzana);
+    border-radius: 30px 2px;
+    transform: perspective(500px) rotateX(0deg);
+}
+
+.card1 h2 {
+    color: var(--verde-manzana);
+}
+
+.card0:hover .front {
+    transform: perspective(500px) rotateY(180deg);
+}
+
+.card1:hover .front {
+    transform: perspective(500px) rotateX(180deg);
+}
+
+/* Porque elegirme */
+.porquelegirme {
+    /* background: var(--negro-n); */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.porquelegirme h3 {
+    color: var(--verde-manzana);
+    text-align: center;
+}
+
+.porquelegirme p {
+    color: #fff;
+    max-width: 500px;
+}
+
+.porquelegirme hr {
+    color: var(--verde-manzana);
+    width: 60%;
+    text-align: center;
+}
+
+/* preguntas frecuentes */
+.preguntasfrecuentes {
+    text-align: center;
+    padding: 20px;
+    color: var(--verde-manzana);
+}
+
+/* Porque tener un sitio web */
+.tituloCajas {
+    text-align: center;
+    padding: 30px;
+    color: var(--verde-manzana);
+}
+
+.cajas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.caja1 {
+    padding: 20px;
+    width: 300px;
+    height: 200px;
+    margin: 10px;
+    background: var(--negro-n);
+    border: 1px solid var(--verde-manzana)
+}
+
+.caja2 {
+    padding: 20px;
+    width: 300px;
+    height: 350px;
+    border: 1px solid;
+    box-shadow: 7px 13px 36px var(--negro-n);
+}
+
+.caja1:hover {
+    transition: 2s;
+    border: 1px solid red;
+}
+
+.caja2:hover {
+    transition: 2s;
+    border: none;
+}
+
+.numero {
+    background: var(--verde-manzana);
+    width: 10%;
+    height: auto;
+    border-radius: 50%;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.texto {
+    color: #fff;
+}
+
+/* Antonio Goez Creando Soluciones */
+.fotoangulo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 500px;
+}
+
+.fotoangulo .tituloSoluciones {
+    color: var(--verde-manzana);
+    text-shadow: 0 0 10px black;
+}
+
+/* Que es un hosting, dominio, programador */
+.sectionOf {
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* border: 1px solid; */
+    box-shadow: 0 0 10px;
+}
+
+.sectionOf div {
+    padding: 10px;
+    border: 1px solid;
+    text-align: center;
+    color: rgb(166, 162, 162);
+}
+
+.sectionOf h4 {
+    color: var(--verde-manzana);
+}
+
+.e {
+    width: 400px;
+    height: 250px;
+}
+
+.i {
+    width: 400px;
+    height: 150px;
+    border-radius: 5px;
+}
+
+.sectionOf .dominio {
+    color: rgb(115, 107, 107);
+    font-size: 50px;
+}
+
+/* ======foto portada==== */
+.fotoPortada {
+    width: 100%;
+    height: auto;
+    margin-top: 56px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 80px;
+    color: var(--verde-manzana);
+}
+
+.fotoPortada img {
+    max-width: 100%;
+    margin: auto;
+    border-radius: 40px 2px;
+    box-shadow: 0 0 35px black;
+}
+
+.fotoPortada p {
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--verde-manzana);
+    max-width: 300px;
+    margin: auto;
+}
+
+@media (max-width: 768px) {
+    .fotoPortada p {
+        text-align: center;
+        font-size: 20px;
+        font-weight: bold;
+    }
+}
+
+/* =============sesion que te puedo ofrecer============ */
+.sesion2 {
+    color: rgb(135, 132, 132);
+    text-align: center;
+    padding: 80px;
+
+}
+
+.sesion2 h2 {
+    color: var(--verde-manzana);
+    padding: 20px;
+}
+
+.sesionQueHago {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    color: #aaadaa;
+}
+
+.cajasSesion {
+    width: 300px;
+    padding: 20px;
+}
+
+.iconos-sesion {
+    font-size: 40px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    padding: 40px;
+}
+
+/* ================carrusel slider 3d======== */
+.carrusel-3d {
+    background-color: var(--oscuro-puro);
+    color: var(--naranja-puro);
+}
+
+.container1 {
+    width: 210px;
+    height: 140px;
+    position: relative;
+    margin: auto;
+    /* border: 1px solid rgb(4, 222, 33); */
+    perspective: 300px;
+
+}
+
+#carousel1 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform: translateZ(-288px);
+    transform-style: preserve-3d;
+    transition: transform 1s;
+}
+
+#carousel1 .imgCarousel {
+    object-fit: cover;
+    display: block;
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    left: 10px;
+    top: 10px;
+    border: 2px solid var(--verde-manzana);
+    line-height: 116px;
+    font-size: 80px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+}
+
+#carousel1 .imgCarousel:nth-child(1) {
+    transform: rotateY(0deg) translateZ(288px);
+}
+
+#carousel1 .imgCarousel:nth-child(2) {
+    transform: rotateY(40deg) translateZ(288px);
+}
+
+#carousel1 .imgCarousel:nth-child(3) {
+    transform: rotateY(80deg) translateZ(288px);
+}
+
+#carousel1 .imgCarousel:nth-child(4) {
+    transform: rotateY(120deg) translateZ(288px);
+}
+
+#carousel1 .imgCarousel:nth-child(5) {
+    transform: rotateY(160deg) translateZ(288px);
+}
+
+#carousel1 .imgCarousel:nth-child(6) {
+    transform: rotateY(200deg) translateZ(288px);
+}
+
+#carousel1 .imgCarousel:nth-child(7) {
+    transform: rotateY(240deg) translateZ(288px);
+}
+
+#carousel1 .imgCarousel:nth-child(8) {
+    transform: rotateY(280deg) translateZ(288px);
+}
+
+#carousel1 .imgCarousel:nth-child(9) {
+    transform: rotateY(320deg) translateZ(288px);
+}
+
+#carousel1 {
+    animation: rotateInY 20s infinite linear;
+}
+
+@keyframes rotateInY {
+    0% {
+        transform: translateZ(-288px) rotateY(0deg);
+    }
+
+    100% {
+        transform: translateZ(-288px) rotateY(360deg);
+    }
+}
+
+/* ====================section software a la medida=================== */
+.sectionSoftware {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 30px;
+    margin: auto;
+    color: #989795;
+}
+
+.title-software {
+    text-align: center;
+    font-size: 40px;
+    padding: 10px;
+    margin: auto;
+}
+
+.sectionSoftware img {
+    margin-right: 50px;
+    max-width: 430px;
+    min-width: 200px;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.text-software {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    max-width: 500px;
+    margin: auto;
+}
+
+/* =================portafolio========= */
+#portafolio img {
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
+}
+
+.sesion3 {
+    color: rgb(146, 139, 139);
+    text-align: center;
+    padding: 20px;
+
+}
+
+.cajaContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.cajaPortafolio {
+    width: 350px;
+    height: 200px;
+    background: var(--oscuro-puro);
+    margin: 10px;
+    border-radius: 50px;
+    box-shadow: 0 0 10px black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    transition: 0.5s;
+}
+
+.cajaPortafolio:hover {
+    background: var(--gris);
+    transition: 0.5s;
+}
+
+.cajaPortafolio a {
+    text-decoration: none;
+    color: green;
+}
+
+
+/* Formulario de contacto */
+#formularioDeContacto {
+    color: var(--verde-manzana);
+}
+
+#form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 50px;
+    box-shadow: 0 0 10px;
+}
+
+#form .campo-form {
+    text-align: center;
+    margin: 10px;
+    min-width: 60%;
+    background: transparent;
+    color: var(--verde-manzana);
+    border-radius: 20px 2px;
+    border: 1px solid var(--verde-manzana);
+}
+
+#form .textarea {
+    resize: none;
+    min-height: 250px;
+}
+
+#form .boton {
+    background: #272927;
+}
+
+/* Pie de pagina */
+footer {
+    margin-bottom: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    color: var(--verde-manzana);
+}
+
+/* ===============A que publico va dirigido mis servicios============ */
+footer .aQuePublicoVaDirigidoMisServicios {
+    max-width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 20px;
+    color: var(--verde-manzana);
+}
+
+.imgFooter {
+    width: 50px;
+    height: auto;
+}
+
+footer .cajafooter {
+    width: 300px;
+    height: 400px;
+    padding: 30px;
+    margin: 20px;
+}
+
+footer .cajafooter a {
+    text-decoration: none;
+    text-transform: capitalize;
+    color: green;
+}
+
+.cajafooter1 a {
+    text-decoration: none;
+    color: green;
+}
+
+/* whatsapp flotante */
+.whatsapp {
+    color: var(--verde-manzana);
+    z-index: 1;
+    font-size: 50px;
+    position: fixed;
+    bottom: 15px;
+    right: 40px;
+    animation: 1s agrandar infinite 120s;
+}
+
+@keyframes agrandar {
+    0% {
+        transform: scale(1);
+    }
+
+    20% {
+        transform: scale(1.3);
+    }
+
+    40% {
+        transform: scale(1.6);
+    }
+
+    60% {
+        transform: scale(1.9);
+    }
+
+    70% {
+        transform: scale(1);
+    }
+
+    80% {
+        transform: scale(.3);
+    }
+
+    90% {
+        transform: scale(1.5);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}

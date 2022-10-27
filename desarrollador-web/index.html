@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>desarrollador web</title>
+    <meta name="description" content="Desarrollo Web Freelance, Programador Web,soy Antonio Goez un Desarrollador freelance dinámico y apasionado por las tecnologías web, me considero una persona muy trabajadora y honesta en mi labor, me encanta los rectos, experimentar cosas nuevas, soy una persona imperativa, me encanta aprender! por cierto es mi cualidad favorita.
+    ">
+    <meta name="keywords"
+        content="programador web freelance, programacion web, programacion freelance, programador JavaScript, programacion web, programadores web, programador web en Colombia, programador web en Latinoamérica, programador freelance en Colombia, paginas web, programador html, programador css, desarrollor web, desarrollo de paginas web, programador, desarrollor, antonio goez, Antonio Goez" />
+    <meta name="author" content="https://www.antoniogoez.com">
+    <link rel="canonical" href="https://www.antoniogoez.com./" />
+    <meta property="og:locale" content="es_CO" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="DESARROLLADOR WEB FREELANCE | ANTONIO GOEZ" />
+    <meta property="og:description"
+        content="Desarrollador Web, Programador Web, soy Antonio Goez un Desarrollador freelance dinámico y apasionado por las tecnologías web, me considero una persona muy trabajadora y honesta en mi labor, me encanta los rectos, experimentar cosas nuevas, soy una persona imperativa, me encanta aprender! por cierto es mi cualidad favorita." />
+    <meta property="og:url" content="https://antoniogoez.com./" />
+    <meta property="og:site_name" content="Desarrollador Web Freelance, Programador Web" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:description"
+        content="Desarrollador Web Freelance, Programador Web, soy Antonio Goez un Desarrollador freelance dinámico y apasionado por las tecnologías web, me considero una persona muy trabajadora y honesta en mi labor, me encanta los rectos, experimentar cosas nuevas, soy una persona imperativa, me encanta aprender! por cierto es mi cualidad favorita." />
+    <meta name="twitter:title" content="DESARROLLADOR WEB FREELANCE - ANTONIO GOEZ" />
+    <meta name="twitter:site" content="@antoniogoez" />
+    <meta name="twitter:creator" content="@antoniogoez21" />
+    <meta name="twitter:label1" content="Escrito por" />
+    <meta name="twitter:data1" content="Antonio Goez" />
+    <meta name="twitter:label2" content="Tiempo de lectura" />
+    <meta name="twitter:data2" content="5 minutos" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="imagenes/logoAG.webp">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+        integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script language="javascript">
+        window.onload = function () {
+            var myInput = document.getElementById('bloquear');
+            myInput.onpaste = function (e) {
+                e.preventDefault();
+                alert("Esta acción está prohibida.");
+            }
+            myInput.oncopy = function (e) {
+                e.preventDefault();
+                alert("Esta acción está prohibida.");
+            }
+        }
+        function deshabilitarMenuContextual() {
+            return false
+        }
+        document.oncontextmenu = deshabilitarMenuContextual
+
+        // function click() {
+        //     if (event.button == 2) {
+        //         window.alert('Esta función no esta disponible.');
+        //     }
+        // }
+        // document.onmousedown = click;
+        var control = false;
+        function checkKey(evt) {
+            if (evt.keyCode == 17) {
+                control = true;
+                return true;
+            }
+            if (control) {
+                alert("Que intentas hacer?");
+                return false;
+            }
+        }
+        function salir(evt) {
+            if (evt.keyCode == 17)
+                control = false;
+        }
+    </script>
+</head>
+
+<body class="body" id="bloquear" onKeyDown="checkKey(event)" onKeyUp="salir(event);">
+    <!-- header -->
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand title2 flip" href="#sobremi"> <img class="imgHeader" src="imagenes/logoAG.webp"
+                        alt="antonio goez" title="Antonio Goez"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#inicio">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#sobremi">Sobre mí</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#detalles">Detalles</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#informacion">Información</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#footer">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- jQuery js -->
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+            crossorigin="anonymous"></script>
+        <!-- Activar popper si se necesita más adelante -->
+        <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script> -->
+
+        <!-- Función jQuery para cerrar el navbar automáticamente -->
+        <script>
+            $('.navbar-nav>li>a').on('click', function () {
+                $('.navbar-collapse').collapse('hide');
+            });
+        </script>
+    </header>
+    <!-- header foto de portada -->
+    <div class="color-header" id="inicio">
+        <h3 class="tutuloFotoDePortada animationLeft">Bienvenidos</h3>
+        <div class="contenedor10 animationRigth">
+            <p>feliz</p>
+            <div class="ul">
+                <div>día!</div>
+                <div>tarde!</div>
+                <div>noche!</div>
+            </div>
+        </div>
+        <p class="animationLeft">hola! Soy</p>
+        <h1 class="animationRigth">Antonio Goez</h1>
+        <h2 class="tutuloFotoDePortada animationLeft">Desarrollador Web</h2>
+        <a href="#sobremi"><i class="fa-solid fa-angle-down flechabajo animationBottom "></i></a>
+    </div>
+    <!-- sobre mi -->
+    <div id="sobremi" class="sobre-mi">
+        <h2 class="animationBottom">Sobre mí</h2>
+        <img class="animationLeft imgSobreMi" src="imagenes/an.webp" alt="antonio goez" title="Antonio Goez">
+        <p class="animationRigth">
+            Hola, me presento! soy <strong>Antonio Goez</strong> un Desarrollador freelance dinámico y apasionado por
+            las tecnologías web, me considero una persona muy trabajadora y honesta en mí labor, me encanta los rectos,
+            experimentar cosas nuevas, soy una persona imperativa, me encanta aprender! por cierto es mi cualidad
+            favorita.
+            <br><strong>Mis cualidades como persona.</strong><br>
+            Me considero un ser muy positivo, imperativo, responsable, honesto, tolerante, autónomo, bondadoso,
+            compasivo, autodidacta...
+        </p>
+    </div>
+    <!-- Que puedo aportar a tu proyecto -->
+    <div id="detalles" class="wave">
+        <h2 class="animationTop">Que puedo aportar a tu proyecto</h2>
+        <div class="line"></div>
+        <div class="siza a">
+            <h3 class="animationLeft">Profesionalismo</h3>
+            <p class="animationRigth">Aporto mi diciplina, constancia y experiencia que he alquirido durante todo
+                este tiempo.</p>
+        </div>
+        <div class="line"></div>
+        <div class="siza b">
+            <h3 class="animationRigth">Iniciativa</h3>
+            <p class="animationLeft">Es una actitud de mí persona, gracias a ello, me desenvuelvo en los proyectos
+                solucionando posibles
+                problemas.</p>
+        </div>
+        <div class="line"></div>
+        <div class="siza a">
+            <h3 class="animationLeft">Creatividad</h3>
+            <p class="animationRigth">Gracias a mi imaginación construtiva, creo ideas originales.</p>
+        </div>
+        <div class="line"></div>
+        <div class="siza b">
+            <h3 class="animationRigth">Garantía</h3>
+            <p class="animationLeft">Todos mis proyectos estan altamente garantizados, en caso de vicios o defectos
+                que afecte el correcto
+                funcionamiento del proyecto, pueden contactarme inmediatamente.</p>
+        </div>
+    </div>
+    <!-- Me adapto a las necesidades del cliente -->
+    <div class="foto2">
+        <h4 class="h4foto2 animationBottom">me adapto a las necesidades del cliente</h4>
+    </div>
+    <!--Algunas tecnologias que utilizo, targetas de 360 grados html,css,JavaScript -->
+    <h2 id="algunasTecnologiasQueUtilizo" class="animationTop">Algunas tecnologías que utilizo</h2>
+    <section class="tecnologias">
+        <div class="card0">
+            <div class="front">
+                <i class="fa-brands fa-html5 iconocard"></i>
+            </div>
+            <h2>html5</h2>
+            <p><strong>(Lenguaje de marcado de hipertexto)</strong> Es un lenguaje estándar que sirve de referencia del
+                software que conecta la elaboración de página web, define una estructura básica y un código, para la
+                definición de contenido de una página web. (es el lenguaje más importante y crucial para el desarrollo
+                web).</p>
+        </div>
+        <div class="card1">
+            <div class="front">
+                <i class="fa-brands fa-css3-alt iconocard"></i>
+            </div>
+            <h2>css3</h2>
+            <p><strong>(Hojas de estilos de cascada)</strong> Es un lenguaje de diseño para definir y crear la
+                presentación de un documento estructurado y escrito en <strong>html</strong> se usa para el diseño
+                visual.</p>
+        </div>
+        <div class="card0">
+            <div class="front">
+                <i class="fa-brands fa-js-square iconocard"></i>
+            </div>
+            <h2>JavaScript</h2>
+            <p>Es un lenguaje de programación orientado a objectos interpretado dinámico y débilmente tipado, este
+                lenguaje es utilizado en el frontend y hoy en día en el backend.</p>
+        </div>
+        <div class="card1">
+            <div class="front">
+                <i class="fa-brands fa-bootstrap iconocard"></i>
+            </div>
+            <h2>Bootstrap</h2>
+            <p>Es un framework de diseño, flexible y robusto de <strong>css</strong> de código abierto multiplataforma.
+            </p>
+        </div>
+    </section>
+    <!-- Porque elegirme -->
+    <div id="informacion" class="porquelegirme animationBottom">
+        <h3>Porque elegirme</h3>
+        <p>
+            Buena pregunta, sinceramente no tengo la oportunidad de conocer a los otros candidatos ni a sus
+            competidores,
+            por ender no puedo hablar de ellos, pero se ¿por qué debería tenerme en cuenta?
+        </p>
+        <hr>
+        <p>
+            Como lo dije anteriormente me apasiona lo que hago, y te cuento, que a lo largo de mí vida he sido una
+            persona autodidacta con hambre de conocimiento he estado en varios campos, (oficios) como
+            ilustrador, diseñador gráfico, artes plásticas,
+            entre otras, como ya viste, puedo ser el candidato perfecto para tu proyecto, he estado en varios campos
+            así
+            que puedo conocer tus necesidades.
+        </p>
+        <hr>
+        <p>Lo que me diferencia como desarrollador es que quiero dar soluciones a cualquiera que
+            tenga cierto producto, sin importar donde lo compro, si tienes un problema con tu producto y acudes a mí, te
+            ayudare a resolverlo.</p>
+    </div>
+    <!-- preguntas frecuentes -->
+    <h3 class="preguntasfrecuentes animationLeft" id="preguntasFrecuentes">Preguntas fecuentes</h3>
+    <div class="accordion" id="accordionPanelsStayOpenExample">
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                <button class="accordion-button bg-dark text-light" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                    aria-controls="panelsStayOpen-collapseOne">
+                    Como trabajas?
+                </button>
+            </h2>
+            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+                aria-labelledby="panelsStayOpen-headingOne">
+                <div class="accordion-body text-light bg-dark">
+                    <strong>En remoto.</strong> Gracias a la tecnología, hoy en día, podemos trabajar en remoto. Te
+                    presento algunos beneficios.
+                    <b>Costos:</b> Tanto el empleador como el empleado, el trabajo <b>remoto</b> nos ahorra algunos
+                    <b>costos</b> como son: viaje, alimentación, hotel, y lo más importante el tiempo.
+                    <br> <br> <b>Libertad.</b> Tener libertad laboral no lo veo como un beneficio, lo veo como una
+                    bendición, ya que el estrés baja notoriamente, trabajando en nuestro ambiente y no, en el
+                    de otros, en lo personal es más productivo.
+                    <br> <br> <b>Productividad.</b> Ser más productivos es uno de los beneficios más importantes de
+                    trabajar en remoto, ya que en nuestros hogares tenemos absolutamente todo a la mano, por ejemplo:
+                    pedimos un café y ya esta en nuestra mesa de trabajo, mientras que en una empresa hay que ir a
+                    buscarlo.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                <button class="accordion-button collapsed bg-dark text-light" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                    aria-controls="panelsStayOpen-collapseTwo">
+                    Das mantenimiento a sitios web de terceros?
+                </button>
+            </h2>
+            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
+                aria-labelledby="panelsStayOpen-headingTwo">
+                <div class="accordion-body bg-dark text-light">
+                    <strong>Por supusto.</strong> Me adapto a las necesidades del cliente, si tu sitio web fue creado
+                    hace determinado tiempo o quieres cambiar la apariencia o la funcionalidad del mismo, con gusto te
+                    puedo colaborar en ello.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                <button class="accordion-button collapsed bg-dark text-light" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                    aria-controls="panelsStayOpen-collapseThree">
+                    Que contenido debo tener en cuenta para una web?
+                </button>
+            </h2>
+            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
+                aria-labelledby="panelsStayOpen-headingThree">
+                <div class="accordion-body bg-dark text-light">
+                    <strong>Como contenido principales.</strong> <br>
+                    <b>Título.</b>Pueder ser el nombre de tú empresa (negocio o persona). <br>
+                    <b>Subtítulo.</b>Puede ser el lema de tú empresa (negocio o persona). <br>
+                    <b>Logo.</b>El logo es muy importante, si cuentas con uno seria estupendo, el logo es la
+                    presentación de la marca personal o empresarial, es la entrada al mundo comercial, si tus clientes
+                    lo ven, sabrán que se trata de tú empresa (negocio o persona). <br>
+                    <b>Textos.</b>La información en los textos debe de ser bien detallada y organizada. <br>
+                    <b>Imágenes, vídeos.</b>Puede se fotografías, videos y o vectores del producto, servicio, puede ser
+                    la fachada de tu empresa y o personal.
+                    <br>
+                    <b>Colores Corporativos.</b>Si tu persona, negocio o empresa cuenta con colores favoritos y o
+                    corporativos pueden incluirlos en tu sitio web, tienden muchos beneficios, como diferenciarse
+                    de la competencia, tus clientes te reconocerán más rápido. <br>
+                    <b>Contacto.</b>A tu sitio web podras incluir varios contactos o enlaces como facebook, whatsapp,
+                    correos electrónicos... <br>
+                    <b>Nota.</b>Entre más contenido ajunte, contara con un sitio más atractivo, una interfaz de usuario
+                    más amigable, ya que entre más contenido hay más espacio para trabajar en un diseño unico y
+                    envidiable.
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Porque tener un sitio web -->
+    <h2 class="tituloCajas animationTop" id="porqueTenerUnSitioWeb">Porque tener un sitio web</h2>
+    <section class="cajas">
+        <div class="caja1 animationTop">
+            <p class="numero">1</p>
+            <p class="texto">
+                Como primera medida un punto fuerte a tocar, es nuestra competencia, en el mundo de internet podemos
+                competir con empresas
+                de impacto mundial.
+            </p>
+        </div>
+        <div class="caja2 animationTop">
+            <p class="numero">2</p>
+            <p class="texto">
+                Al poseer un sitio web nos da muchas ventajas beneficiosas, como por ejemplo la presencia de nuestro
+                negocio en todo
+                internet, es un punto muy importante, no es lo mismo tener una página en facebook. Una web no es un lujo
+                es una necesidad para todo negocio que quiera crecer a grandes escalas.
+            </p>
+        </div>
+        <div class="caja1 animationTop">
+            <p class="numero">3</p>
+            <p class="texto">
+                También podemos interactuar más a menudo con nuestros clientes, preguntar si están a gusto con nuestros
+                productos o servicios.
+            </p>
+        </div>
+        <div class="caja2 animationTop">
+            <p class="numero">4</p>
+            <p class="texto">
+                Un sitio web nos abre las puertas a todo el mundo, es como alquilar un local en la calle más comercial
+                del planeta, todos nuestro clientes potenciales pueden entrar a nuestro local web, pueden preguntar,
+                comprar o tomar nuestros servicios las 24/7.
+            </p>
+        </div>
+        <div class="caja1 animationTop">
+            <p class="numero">5</p>
+            <p class="texto">
+                Otro gran punto a favor, al ser tu sitio web, el código de dicho sitio es 100% tuyo, podrás modificarlo,
+                actualizarlo, migrarlo a otro hosting...
+            </p>
+        </div>
+    </section>
+    <!-- Antonio Goez Creando Soluciones -->
+    <div class="fotoangulo">
+        <h1 class="animationTop tituloSoluciones">Antonio Goez</h1>
+        <h2 class="animationBottom tituloSoluciones">Creando Soluciones</h2>
+    </div>
+    <!-- Que es un hosting, dominio, programador -->
+    <div class="sectionOf" id="QueEsUnHosting">
+        <div class="e animationBottom">
+            <i class="fa-solid fa-warehouse dominio"></i>
+            <h4>Que es un hosting?</h4>
+            <p>Un <b>hosting</b> es el alojamiento de un sitio web disponible las 24 horas del día 7 días a la semana en
+                cualquier parte del mundo, el hosting alberga todos los archivos incluyendo videos, fotografías, textos,
+                etc, de
+                nuestro sitio.</p>
+        </div>
+        <div class="i animationBottom">
+            <i class="fa-solid fa-arrows-left-right dominio"></i>
+            <h4>Que es un dominio?</h4>
+            <p>
+                Un <b>dominio</b> es el nombre y o dirección de nuestro sitio web
+            </p>
+        </div>
+        <div class="o animationBottom">
+            <i class="fa-solid fa-laptop-code dominio"></i>
+            <h4>Que es un programador?</h4>
+            <p>El <b>programador</b> es la persona que crea software desde 0 con lenguajes de programación que solo
+                entiende las máquinas.</p>
+        </div>
+    </div>
+    <!-- carrusel de fotos -->
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="imagenes/seo.webp" class="d-block w-100" alt="Desarrollador web" title="Seo">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>SEO</h5>
+                    <p>Optimización en los motores de búsqueda.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="imagenes/responsive.webp" class="d-block w-100" alt="Desarrollador web"
+                    title="Responsive Desing">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>RESPOSIVE DESIGN</h5>
+                    <p>Diseño adaptable para móvil, tablets, laptop.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="imagenes/ideas.webp" class="d-block w-100" alt="desarrollador web" title="Optimización">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>OPTIMIZACION</h5>
+                    <p>Seo, Responsive Desing, Velocidad.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- ======================foto de portada============================================= -->
+    <div class="fotoPortada">
+        <p class="animationLeft">Crear una buena experiencia de usuario no ocurre por accidente. Ocurre por un buen
+            diseño.</p>
+        <img class="animationRigth" src="imagenes/diseño-ux.webp" alt="desarrollo web" title="desarrollo web">
+    </div>
+    <!-- ===========================Que te puedo ofrecer====================== -->
+    <section class="sesion2">
+        <h2 class="animationScala">Que te puedo ofrecer!</h2>
+        <p class="animationLeft">Te ofrezco las siguientes caracteristicas:</p>
+        <!-- <hr class="linea"> -->
+        <div class="sesionQueHago">
+            <div class="cajasSesion animationAparecer">
+                <i class="iconos-sesion fa-solid fa-house-laptop"></i>
+                <h2>Diseño UX/UI</h2>
+                <p>Diseño una excelente experiencia de usuario e interfaces intuitivas para su empresa.</p>
+            </div>
+            <div class="cajasSesion animationAparecer">
+                <i class="iconos-sesion fa-solid fa-palette"></i>
+                <h2>Proyecto</h2>
+                <p>Desarrollo tu proyecto moderno y dinámico pensando en el usuario final.</p>
+            </div>
+            <div class="cajasSesion animationAparecer">
+                <i class="iconos-sesion fa-solid fa-file-code"></i>
+                <h2>Seo</h2>
+                <p>Seo básico, tu web indexada en los buscadores de <b>Google</b>.</p>
+            </div>
+        </div>
+    </section>
+    <div class="carrusel-3d">
+        <!-- ================carrusel 3d=========== -->
+        <h3 class="title-software animationLeft">Software a la medida.</h3>
+        <section class="container1 animationAparecer">
+            <div id="carousel1">
+                <img class="imgCarousel" src="imagenes/doctora.webp" alt="desarrollor web" title="Centros Medicos">
+                <img class="imgCarousel" src="imagenes/abogado.webp" alt="desarrollor web" title="Abogados">
+                <img class="imgCarousel" src="imagenes/cantante.webp" alt="desarrollor web" title="Cantantes">
+                <img class="imgCarousel" src="imagenes/supermercado.webp" alt="desarrollor web" title="Tiendas">
+                <img class="imgCarousel" src="imagenes/barberia.webp" alt="desarrollor web" title="Barberías">
+                <img class="imgCarousel" src="imagenes/taller.webp" alt="desarrollor web" title="Taller">
+                <img class="imgCarousel" src="imagenes/tatuador.webp" alt="desarrollor web" title="Tatuadores">
+                <img class="imgCarousel" src="imagenes/hotel.webp" alt="desarrollor web" title="Hoteles">
+                <img class="imgCarousel" src="imagenes/seguridad.webp" alt="desarrollor web"
+                    title="Vigilancia y seguridad privada">
+            </div>
+            <!-- =======Software a medida======== -->
+        </section>
+    </div>
+    <section class="sectionSoftware">
+
+
+        <img class="animationRotateY" src="imagenes/celular-goez1.webp" alt="Antonio Goez Desarrollador web"
+            title="Antonio Goez">
+        <p class="text-software animationAparecer">Para mí es muy importante, poder diseñar y crear un buen producto a
+            medida segun las
+            necesidades del cliente, toda necesidad es muy diferente y requiere un estudio personalizado.</p>
+    </section>
+    <!-- =======================portafolio=============== -->
+    <section id="portafolio" class="sesion3">
+        <h3 class="flip">Mi portafolio</h3>
+        <p class="animationRotateY">Para mí es un placer, enseñarte un poco de mí trabajo</p>
+        <hr>
+        <div class="cajaContainer">
+            <div class="cajaPortafolio animationLeft">
+                <img src="imagenes/tatuajes.webp" alt="desarrollador web" title="Colombia-Tattoo">
+                <a href="#">Colombia-Tattoo</a>
+            </div>
+            <div class="cajaPortafolio animationRigth">
+                <img src="imagenes/restaurante.webp" alt="desarrollador web" title="Restaurante Donde Willy">
+                <a href="#">Restaurante-Donde Willy</a>
+            </div>
+            <div class="cajaPortafolio animationLeft">
+                <img src="imagenes/consorcio-abogados.webp" alt="Desarrollador web" title="Bufete De Abogados">
+                <a href="#">Bufete-Abogados</a>
+            </div>
+            <div class="cajaPortafolio animationRigth">
+                <img src="imagenes/hotel (1).webp" alt="desarrollador web" title="Hotel">
+                <a href="#">Hotel</a>
+            </div>
+            <div class="cajaPortafolio animationLeft">
+                <img src="imagenes/odontologo.webp" alt="desarrollador web" title="Clínica Odontológica">
+                <a href="#">Clínica Odontológica</a>
+            </div>
+            <div class="cajaPortafolio animationRigth">
+                <img src="" alt="desarrollador web" title="Desaarrollador web">
+                <a href="#">Compositores de letras</a>
+            </div>
+
+
+            <!-- <div class="cajaPortafolio">
+                <img src="" alt="desarrollador web" title="desarrollador web">
+                <a href="#">calculadora</a>
+            </div>
+            <div class="cajaPortafolio">
+                <img src="" alt="desarrollor web" title="desarrollador web">
+                <a href="#">calculadora</a>
+            </div>
+            <div class="cajaPortafolio">
+                <img src="" alt="desarrollador web" title="desarrollador web">
+                <a href="#">calculadora</a>
+            </div>
+            <div class="cajaPortafolio">
+                <img src="" alt="desarrollador" title="desarrollador web">
+                <a href="#">calculadora</a>
+            </div> -->
+
+
+        </div>
+    </section>
+
+    <!-- Formulario de contacto -->
+    <form class="animationRotateY" action="https://formspree.io/f/mbjwkwan" method="POST" id="form">
+        <h6 id="formularioDeContacto">Formulario de contacto</h6>
+        <input class="campo-form" type="text" name="Nombres y apellidos" placeholder="Nombres y apellidos" required>
+        <input class="campo-form" type="number" name="Celular" placeholder="celular" required>
+        <input class="campo-form" type="email" name="Mensaje de tu pagina web" placeholder="Correo electrónico">
+        <textarea class="campo-form textarea" name="mensaje" placeholder="Escribe tu mensaje" required></textarea>
+        <!-- boton -->
+        <button class="campo-form boton flip" type="submit">Enviar</button>
+    </form>
+    <script>
+        const $form = document.querySelector('#form');
+        $form.addEventListener('submit', handlesumit);
+        async function handlesumit(event) {
+            event.preventDefault()
+            const form = new FormData(this);
+            const response = await fetch(this.action, {
+                method: this.method,
+                body: form,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            })
+            if (response.ok) {
+                this.reset()
+                alert('Tu mensaje fue enviado con exito.');
+            }
+        }
+    </script>
+    <!-- Pie de pagina -->
+    <footer class="animationLeft">
+        <div class="aQuePublicoVaDirigidoMisServicios">
+            <div>
+                <h4>A que público, va dirigido mís servicios</h4>
+                <p>A todo el público en general, mí meta principal es que todas las <b>personas, negocios y empresas</b>
+                    tengan
+                    la oportunidad de poseer su propia página web, sin limitaciones y a <b>precios competitivos del
+                        mercado</b>,
+                    recuerden que soy un desarrollador freelance.</p>
+            </div>
+            <div>
+                <h4>Tú página web creada a tu medida.</h4>
+                <p> <b>Para:</b></p>
+                <ul>
+                    <li>Bufete de abogados.</li>
+                    <li>Constructoras.</li>
+                    <li>Clínicas y Centros Médicos.</li>
+                    <li>Odontología.</li>
+                    <li>Opticas.</li>
+                    <li>Vigilancia y Seguridad Privada.</li>
+                    <li>Almacenes de: Cadena, Tecnología, Motos, Ropa, Zapatería, Muebles, etc.</li>
+                    <li>Tatuadores.</li>
+                    <li>Cantantes</li>
+                    <li>Joyería.</li>
+                    <li>Casa de Empeño.</li>
+                    <li>Hoteles.</li>
+                    <li>Piscina.</li>
+                    <li>Restaurantes.</li>
+                    <li>Supermercados.</li>
+                    <li>Talleres de: Mecánica, Pintura y Latonería, Joyería y Relojería, Tapicería y Restauración,
+                        Ornamentación, etc.</li>
+                    <li>Páginas Personales.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="cajafooter1" id="footer">
+            <a href="#sobremi"><img class="imgFooter" src="imagenes/logoAG.webp" alt="Antonio Goez"
+                    title="Antonio Goez"></a>
+            <h6>Antonio Goez &copy;</h6>
+            <i class="fa-solid fa-code"></i> Desarrollador web<br>
+            <i class="fa-solid fa-location-dot"></i> Colombia<br> <br>
+            <i class="fa-solid fa-address-book"></i> Contacto <br>
+            <i class="fa-brands fa-whatsapp"></i> <a
+                href="https://api.whatsapp.com/send?phone=573147950188&text=Hola!%20Bienvenido%20soy%20Antonio%20Goez%2C%20me%20complace%20tenerte%20por%20aqu%C3%AD."
+                target="_blank">Whatsapp</a> <br>
+            <i class="fa-brands fa-telegram"></i> <a href="https://t.me/DesarrolladorWeb" target="_blank">Telegram</a>
+            <br>
+            <i class="fa-brands fa-facebook-square"></i> <a
+                href="https://www.facebook.com/profile.php?id=100005449292632" target="_blank">Facebook</a> <br>
+            <i class="fa-solid fa-envelope"></i> <a href="mailto:info@antoniogoez.com">info@antoniogoez.com</a>
+        </div>
+        <div class="cajafooter">
+            <h6>Enlaces web</h6>
+            <hr>
+            <a href="#algunasTecnologiasQueUtilizo">Algunas tecnologías que utilizo</a>
+            <p>-------------------------------------</p>
+            <a href="#preguntasFrecuentes">Preguntas frecuentes</a>
+            <p>-------------------------------------</p>
+            <a href="#porqueTenerUnSitioWeb">Porque tener un sitio web</a>
+            <p>-------------------------------------</p>
+            <a href="#QueEsUnHosting">Que es un hosting, <br> que es un dominio, <br> que es un programador.</a>
+            <p>-------------------------------------</p>
+            <a href="#formularioDeContacto">Formulario de contacto</a>
+            <p>-------------------------------------</p>
+            <p>| Copyrigth | Todos los derechos reservados | 2022 |</p>
+        </div>
+    </footer>
+    <!-- whatsapp flotante -->
+    <a class="whatsapp"
+        href="https://api.whatsapp.com/send?phone=573147950188&text=Hola!%20Bienvenido%20soy%20Antonio%20Goez%2C%20me%20complace%20tenerte%20por%20aqu%C3%AD."
+        title="Cotización" target="_blank"><i class="fa-brands fa-whatsapp-square"></i></a>
+    <!-- links bootstrap css js -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
